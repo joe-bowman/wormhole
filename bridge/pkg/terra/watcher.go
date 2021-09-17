@@ -152,6 +152,7 @@ func (e *BridgeWatcher) Run(ctx context.Context) error {
 				Height:        latestBlock.Int(),
 				BridgeAddress: e.bridge,
 			})
+			time.Sleep(time.Millisecond * 500)
 		}
 	}()
 
